@@ -14,7 +14,6 @@
       <v-btn>{{ unelectedCount }} out of {{ totalCount }} candidates are detonated</v-btn>
 
     </v-app-bar>
-    <v-btn @click="enableSound" v-if="!soundEnabled">Enable Sound</v-btn>
     <audio ref="explosionSound" src="/exploding-tories/explosion.mp3" preload="auto"></audio>
     <v-virtual-scroll :items="chunkedCandidates" :item-height="320" height="800">
       <template v-slot:default="{ item: candidatesChunk }">
