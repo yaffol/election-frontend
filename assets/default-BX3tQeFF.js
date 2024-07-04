@@ -1,1 +1,0 @@
-import{r as o,o as n,c as p,w as t,V as s,a as e,b as _}from"./index-D2SlsxgZ.js";const f={__name:"default",setup(c){return(l,u)=>{const a=o("router-view"),r=o("AppFooter");return n(),p(s,null,{default:t(()=>[e(_,null,{default:t(()=>[e(a)]),_:1}),e(r)]),_:1})}}};export{f as default};
