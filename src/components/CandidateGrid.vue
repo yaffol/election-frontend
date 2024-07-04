@@ -10,7 +10,7 @@
 
         <v-btn class="d-none d-md-flex" color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts Only</v-btn>
         
-        <v-btn class="d-sm d-md-none" color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts</v-btn>
+        <v-btn class="d-sm d-md-none" color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts Only</v-btn>
 
         <!-- <v-btn class="d-sm d-md-none" color="secondary" :icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter"></v-btn> -->
 
