@@ -2,16 +2,22 @@
   <v-container>
     <v-app-bar app>
       <v-btn :icon="!soundEnabled ? 'mdi-volume-off' : 'mdi-volume-high'"  @click="toggleSound"></v-btn>
-      <v-app-bar-title>Election Information <span class="ml-4 text-subtitle-2 text-disabled">Data from Democracy Club</span></v-app-bar-title>
+      🧨
+      <v-app-bar-title class="d-none d-md-flex">Exploding Tories<span class="ml-4 text-subtitle-2 text-disabled">Data from Democracy Club</span></v-app-bar-title>
 
         <v-spacer></v-spacer>
       <v-app-bar-items>
 
-        <v-btn color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts Only</v-btn>
+        <v-btn class="d-none d-md-flex" color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts Only</v-btn>
+        
+        <v-btn class="d-sm d-md-none" color="secondary" :prepend-icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter" :variant="bigBeastsFilter ? 'flat' : 'outlined'">Big Beasts</v-btn>
+
+        <!-- <v-btn class="d-sm d-md-none" color="secondary" :icon="bigBeastsFilter ? 'mdi-shark-fin' : 'mdi-shark-fin-outline'" @click="toggleBigBeastsFilter"></v-btn> -->
 
         <v-spacer></v-spacer>
       </v-app-bar-items>
-      <v-btn>{{ unelectedCount }} out of {{ totalCount }} candidates are detonated</v-btn>
+      <v-btn class="d-none d-md-flex">{{ unelectedCount }} out of {{ totalCount }} candidates are detonated</v-btn>
+      <v-btn class="d-sm d-md-none">{{ unelectedCount }} out of {{ totalCount }}</v-btn>
 
     </v-app-bar>
     <audio ref="explosionSound" src="/exploding-tories/explosion.mp3" preload="auto"></audio>
